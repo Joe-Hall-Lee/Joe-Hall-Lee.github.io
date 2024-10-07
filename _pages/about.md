@@ -21,7 +21,7 @@ redirect_from:
 
 Hello, my name is Hongli Zhou and I am an incoming PhD student at Harbin Institute of Technology (HIT). I am currently in my final year of undergraduate studies at HIT. I have the privilege of being a part of the [MI&T Lab](https://mitlab.hit.edu.cn) at HIT, under the guidance of [Muyun Yang](https://homepage.hit.edu.cn/yangmuyun).
 
-As a novice researcher, I am eager to learn and grow. My research interest lies in the evaluation of large language models, and my work has garnered <a href='https://scholar.google.com/citations?user=1Ztm4XhDNvcC'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a> citations.
+As a novice researcher, I am eager to learn and grow. My research interest lies in the evaluation of large language models <a href='https://scholar.google.com.hk/citations?user=1Ztm4XhDNvcC'><img src="https://img.shields.io/endpoint?logo=Google%20Scholar&url=https://cdn.jsdelivr.net/gh/Joe-Hall-Lee/Joe-Hall-Lee.github.io@google-scholar-stats/gs_data_shieldsio.json&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.
 
 # 🔥 News
 
@@ -45,6 +45,21 @@ As a novice researcher, I am eager to learn and grow. My research interest lies 
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">艺术科技</div><img src='images/艺术科技.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[新质生产力背景下环保公益游戏设计策略探析](https://d.wanfangdata.com.cn/periodical/ChlQZXJpb2RpY2FsQ0hJTmV3UzIwMjQwNzA0Eg15c2tqMjAyNDA5MDE5GghkZ3p6a2Q5Yw%3D%3D)
+
+张子墨, 刘柏亨\*, **周宏理**
+
+**Keywords**
+
+-   环保公益游戏
+-   绿色生产力
+-   功能游戏设计
+</div>
+</div>
+
 # 🎖 Honors and Awards
 
 -   _2023.12_ Contemporary Undergraduate Mathematical Contest in Modeling, First Prize in Heilongjiang Province
@@ -53,7 +68,3 @@ As a novice researcher, I am eager to learn and grow. My research interest lies 
 # 📖 Educations
 
 -   _2021.08 - 2025.06 (now)_, Undergraduate, School of Architecture and Design, Harbin Institute of Technology
-
-# 🗺️ Visitor Map
-
-<script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=54e0ojatafc&amp;m=7&amp;c=e63100&amp;cr1=ffffff&amp;f=arial&amp;l=0&amp;bv=90&amp;lx=-420&amp;ly=420&amp;hi=20&amp;he=7&amp;hc=a8ddff&amp;rs=80" async="async"></script>
