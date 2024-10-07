@@ -21,7 +21,7 @@ redirect_from:
 
 Hello, my name is Hongli Zhou and I am an incoming PhD student at Harbin Institute of Technology (HIT). I am currently in my final year of undergraduate studies at HIT. I have the privilege of being a part of the [MI&T Lab](https://mitlab.hit.edu.cn) at HIT, under the guidance of [Muyun Yang](https://homepage.hit.edu.cn/yangmuyun).
 
-As a novice researcher, I am eager to learn and grow. My research interest lies in the evaluation of large language models <a href='https://scholar.google.com.hk/citations?user=1Ztm4XhDNvcC'><img src="https://img.shields.io/endpoint?logo=Google%20Scholar&url=https://cdn.jsdelivr.net/gh/Joe-Hall-Lee/Joe-Hall-Lee.github.io@google-scholar-stats/gs_data_shieldsio.json&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.
+As a novice researcher, I am eager to learn and grow. My research interest lies in the evaluation of large language models, and I have published a few papers in this area <a href='https://scholar.google.com.hk/citations?user=1Ztm4XhDNvcC'><img src="https://img.shields.io/endpoint?logo=Google%20Scholar&url=https://cdn.jsdelivr.net/gh/Joe-Hall-Lee/Joe-Hall-Lee.github.io@google-scholar-stats/gs_data_shieldsio.json&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.
 
 # 🔥 News
 
