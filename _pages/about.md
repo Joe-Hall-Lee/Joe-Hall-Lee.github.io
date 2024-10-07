@@ -55,8 +55,7 @@ Hui Huang, Yingqi Qu, **Hongli Zhou**, Jing Liu, Muyun Yang, Bing Xu, Tiejun Zha
 **Keywords**
 
 -   Large Language Model
--   Evaluation Bias
--   LLM-as-a-Judge
+-   Automatic Evaluation
 </div>
 </div>
 
@@ -82,4 +81,4 @@ Hui Huang, Yingqi Qu, **Hongli Zhou**, Jing Liu, Muyun Yang, Bing Xu, Tiejun Zha
 
 # 📖 Educations
 
--   _2021.08 - 2025.06 (now)_, Undergraduate, School of Architecture and Design, Harbin Institute of Technology
+-   _2021.08 - now_, Undergraduate, School of Architecture and Design, Harbin Institute of Technology
