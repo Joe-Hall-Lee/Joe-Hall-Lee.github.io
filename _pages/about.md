@@ -45,6 +45,21 @@ As a novice researcher, I am eager to learn and grow. My research interest lies 
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/COLING_2025.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[On the Limitations of Fine-tuned Judge Models for LLM Evaluation](https://arxiv.org/abs/2403.02839)
+
+Hui Huang, Yingqi Qu, **Hongli Zhou**, Jing Liu, Muyun Yang, Bing Xu, Tiejun Zhao
+
+**Keywords**
+
+-   Large Language Model
+-   Evaluation Bias
+-   LLM-as-a-Judge
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">艺术科技</div><img src='images/艺术科技.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 

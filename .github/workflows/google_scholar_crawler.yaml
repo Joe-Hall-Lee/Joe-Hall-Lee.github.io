@@ -1,18 +1,22 @@
 name: Get Citation Data
 
 on: 
- page_build: 
- schedule:
-  - cron:  '0 8 * * *'
+  page_build: 
+  schedule:
+    - cron:  '0 8 * * *'
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Install Reqs
       run: |
         sudo apt-get install python3-setuptools
+    - name: Set up Git user
+      run: |
+        git config --global user.name "Joe Hall Lee"
+        git config --global user.email "sacredkayma@qq.com"
     - name: Run
       run: |
         cd ./google_scholar_crawler
