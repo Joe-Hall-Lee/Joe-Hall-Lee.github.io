@@ -21,7 +21,7 @@ baidu_site_verification: # get baidu_site_verification from https://ziyuan.baidu
 
 # Site Author
 author:
-    name: "Hongli Zhou (周宏理)"
+    name: "Hongli Zhou"
     avatar: "images/android-chrome-512x512.png"
     bio: "Harbin Institute of Technology"
     location: "Harbin, China"
