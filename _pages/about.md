@@ -52,7 +52,7 @@ As a novice researcher, I am eager to learn and grow. My research interest lies 
 
 张子墨, 刘柏亨\*, **周宏理**
 
-**Keywords**
+**关键词**
 
 -   环保公益游戏
 -   绿色生产力
