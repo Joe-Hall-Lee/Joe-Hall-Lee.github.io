@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title: "Hongli Zhou (周宏理) - Homepage"
+title: "Hongli Zhou (周宏理)"
 description: "Undergrad Student"
 repository: "Joe-Hall-Lee/Joe-Hall-Lee.github.io"
 google_scholar_stats_use_cdn: true
@@ -15,7 +15,7 @@ google_scholar_stats_use_cdn: true
 google_analytics_id: G-6R20PC29SZ # get google_analytics_id from https://analytics.google.com/analytics/
 
 # SEO Related
-google_site_verification: # get google_site_verification from https://search.google.com/search-console/about
+google_site_verification: UrqfpnGEu2o0Zwgp92JzoRKaEbJS3FMOAs6aFO0QgMg # get google_site_verification from https://search.google.com/search-console/about
 bing_site_verification: # get bing_site_verification from https://www.bing.com/webmasters/about
 baidu_site_verification: # get baidu_site_verification from https://ziyuan.baidu.com/login/index?u=/site/index
 
