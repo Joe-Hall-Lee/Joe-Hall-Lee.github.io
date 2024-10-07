@@ -50,7 +50,7 @@ As a novice researcher, I am eager to learn and grow. My research interest lies 
 
 [On the Limitations of Fine-tuned Judge Models for LLM Evaluation](https://arxiv.org/abs/2403.02839)
 
-Hui Huang, Yingqi Qu, **Hongli Zhou**, Jing Liu, Muyun Yang, Bing Xu, Tiejun Zhao
+Hui Huang, Yingqi Qu, **Hongli Zhou**, Jing Liu, Muyun Yang\*, Bing Xu, Tiejun Zhao
 
 **Keywords**
 
