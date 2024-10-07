@@ -25,7 +25,7 @@ As a novice researcher, I am eager to learn and grow. My research interest lies 
 
 # 🔥 News
 
--   _2024.09_: &nbsp;🎉🎉 I'm admitted for direct Ph.D. in CS at HIT!
+-   _2024.09_: &nbsp;🎉🎉 I'm admitted as a direct Ph.D. student in CS at HIT!
 -   _2024.05_: &nbsp;🎉🎉 My first paper is accepted by CCL 2024!
 
 # 📝 Publications
