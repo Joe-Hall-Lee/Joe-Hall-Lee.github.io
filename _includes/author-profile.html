@@ -28,10 +28,12 @@
             <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ author.employer }}</li>
             {% endif %}
             {% if author.uri %}
-            <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link" aria-hidden="true"></i> Website</a></li>
+            <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link" aria-hidden="true"></i> Website</a>
+            </li>
             {% endif %}
             {% if author.email %}
-            <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a>
+            <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i>
+                    Email</a>
             </li>
             {% endif %}
             {% if author.keybase %}
@@ -48,18 +50,21 @@
             {% endif %}
             {% if author.facebook %}
             <li><a href="https://www.facebook.com/{{ author.facebook }}"><i class="fab fa-fw fa-facebook-square"
-                        aria-hidden="true"></i> Facebook</a></li>
+                        aria-hidden="true"></i>
+                    Facebook</a></li>
             {% endif %}
             {% if author.google_plus %}
             <li><a href="https://plus.google.com/+{{ author.google_plus }}"><i class="fab fa-fw fa-google-plus"
-                        aria-hidden="true"></i> Google+</a></li>
+                        aria-hidden="true"></i> Google+</a>
+            </li>
             {% endif %}
             {% if author.linkedin %}
             <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}"><i class="fab fa-fw fa-linkedin"
                         aria-hidden="true"></i> LinkedIn</a></li>
             {% endif %}
             {% if author.dblp %}
-            <li><a href="{{ author.dblp }}"><i class="ai ai-dblp ai-fw" aria-hidden="true"></i> DBLP</a></li>
+            <li><a href="{{ author.dblp }}"><i class="ai ai-dblp ai-fw" aria-hidden="true"></i> DBLP</a>
+            </li>
             {% endif %}
             {% if author.xing %}
             <li><a href="https://www.xing.com/profile/{{ author.xing }}"><i class="fab fa-fw fa-xing-square"
@@ -83,7 +88,8 @@
             {% endif %}
             {% if author.stackoverflow %}
             <li><a href="https://www.stackoverflow.com/users/{{ author.stackoverflow }}"><i
-                        class="fab fa-fw fa-stack-overflow" aria-hidden="true"></i> Stackoverflow</a></li>
+                        class="fab fa-fw fa-stack-overflow" aria-hidden="true"></i>
+                    Stackoverflow</a></li>
             {% endif %}
             {% if author.lastfm %}
             <li><a href="https://lastfm.com/user/{{ author.lastfm }}"><i class="fab fa-fw fa-lastfm-square"
@@ -130,7 +136,8 @@
                     Vine</a></li>
             {% endif %}
             {% if author.googlescholar %}
-            <li><a href="{{ author.googlescholar }}"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
+            <li><a href="{{ author.googlescholar }}"><i class="fas fa-fw fa-graduation-cap"></i> Google
+                    Scholar</a></li>
             {% endif %}
             {% if author.pubmed %}
             <li><a href="{{ author.pubmed }}"><i class="ai ai-pubmed-square ai-fw"></i> PubMed</a></li>
@@ -139,11 +146,13 @@
             <li><a href="{{ author.orcid }}"><i class="ai ai-orcid-square ai-fw"></i> ORCID</a></li>
             {% endif %}
             {% if author.impactstory %}
-            <li><a href="{{ author.impactstory }}"><i class="ai ai-impactstory ai-fw"></i> Impactstory</a></li>
+            <li><a href="{{ author.impactstory }}"><i class="ai ai-impactstory ai-fw"></i> Impactstory</a>
+            </li>
             {% endif %}
             {% if author.wikipedia %}
             <li><a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fab fa-fw fa-wikipedia-w"
-                        aria-hidden="true"></i> Wikipedia</a></li>
+                        aria-hidden="true"></i> Wikipedia</a>
+            </li>
             {% endif %}
         </ul>
         <div class="author__urls_sm">
@@ -263,6 +272,7 @@
     </div>
     <style>
         #visitor-map {
+            margin-top: -5%;
             display: block;
         }
 
@@ -273,8 +283,8 @@
         }
     </style>
     <div id="visitor-map">
-        <br />
-        <script type="text/javascript" id="clstr_globe"
-            src="//clustrmaps.com/globe.js?d=QTrHBhOp6a-PGWmziePUNmZyixqWynq6EBZf2vyKmpo"></script>
+        <script type="text/javascript"
+            src="//rf.revolvermaps.com/0/0/6.js?i=58p94t1e6wr&amp;m=7&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=0"
+            async="async"></script>
     </div>
 </div>
