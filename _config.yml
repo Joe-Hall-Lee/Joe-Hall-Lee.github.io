@@ -7,7 +7,7 @@
 
 # Site Settings
 title: "Hongli Zhou (周宏理)"
-description: "Undergrad Student"
+description: "Undergraduate Student"
 repository: "Joe-Hall-Lee/Joe-Hall-Lee.github.io"
 google_scholar_stats_use_cdn: true
 
@@ -24,7 +24,7 @@ author:
     name: "Hongli Zhou"
     avatar: "images/android-chrome-512x512.png"
     bio: "Harbin Institute of Technology"
-    location: "Harbin, China"
+    location: "Beijing, China"
     employer:
     pubmed:
     googlescholar: "https://scholar.google.com/citations?user=1Ztm4XhDNvcC"

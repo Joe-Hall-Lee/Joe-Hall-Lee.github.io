@@ -19,7 +19,7 @@ redirect_from:
 
 # 🧍‍♂️ Biography
 
-Hello, my name is Hongli Zhou and I am an incoming PhD student at Harbin Institute of Technology (HIT). I am currently in my final year of undergraduate studies at HIT. I have the privilege of being a part of the [MI&T Lab](https://mitlab.hit.edu.cn) at HIT, advised by Prof. [Muyun Yang](https://homepage.hit.edu.cn/yangmuyun).
+Hello, my name is Hongli Zhou and I am a senior undergraduate student from Harbin Institute of Technology (HIT). I have the privilege of being a part of the [MI&T Lab](https://mitlab.hit.edu.cn) at HIT, advised by [Prof. Muyun Yang](https://homepage.hit.edu.cn/yangmuyun).
 
 As a novice researcher, I am eager to learn and grow. My research interest lies in the evaluation of large language models, and I have published a few papers in this area <a href='https://scholar.google.com.hk/citations?user=1Ztm4XhDNvcC'><img src="https://img.shields.io/endpoint?logo=Google%20Scholar&url=https://cdn.jsdelivr.net/gh/Joe-Hall-Lee/Joe-Hall-Lee.github.io@google-scholar-stats/gs_data_shieldsio.json&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.
 
@@ -48,9 +48,9 @@ As a novice researcher, I am eager to learn and grow. My research interest lies 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/COLING_2025.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[On the Limitations of Fine-tuned Judge Models for LLM Evaluation](https://arxiv.org/abs/2403.02839)
+[An Empirical Study of LLM-as-a-Judge for LLM Evaluation: Fine-tuned Judge Model is not a General Substitute for GPT-4](https://arxiv.org/abs/2403.02839)
 
-Hui Huang, Yingqi Qu, **Hongli Zhou**, Jing Liu, Muyun Yang\*, Bing Xu, Tiejun Zhao
+Hui Huang, Yingqi Qu, Xingyuan Bu, **Hongli Zhou**, Jing Liu, Muyun Yang\*, Bing Xu, Tiejun Zhao
 
 **Keywords**
 
