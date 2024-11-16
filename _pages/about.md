@@ -30,7 +30,7 @@ As a novice researcher, I am eager to learn and grow. My research interest lies 
 
 # 📝 Publications
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CCL 2024</div><img src='images/CCL_2024.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CCL 2024</div><img src='images/Mitigating_the_Bias_of_Large_Language_Model_Evaluation.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Mitigating the Bias of Large Language Model Evaluation](https://arxiv.org/abs/2409.16788)
@@ -45,7 +45,7 @@ As a novice researcher, I am eager to learn and grow. My research interest lies 
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/COLING_2025.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/An_Empirical_Study_of_LLM-as-a-Judge_for_LLM_Evaluation_Fine-tuned_Judge_Model_is_not_a_General_Substitute_for_GPT-4.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [An Empirical Study of LLM-as-a-Judge for LLM Evaluation: Fine-tuned Judge Model is not a General Substitute for GPT-4](https://arxiv.org/abs/2403.02839)
