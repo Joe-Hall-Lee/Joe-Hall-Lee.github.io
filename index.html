@@ -22,14 +22,20 @@
     <!-- Global CSS -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
 
-    <!-- github calendar css -->
-    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar-responsive.css">
-    <!-- github activity css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-    <link rel="stylesheet" href="assets/plugins/github-activity/src/github-activity.css">
-
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Inline script to set theme synchronously -->
+    <script>
+        // Run immediately to avoid flicker
+        (function () {
+            // Check localStorage for saved theme
+            const savedTheme = localStorage.getItem("theme");
+            const theme = savedTheme || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+            // Set data-theme on <html> to apply before rendering
+            document.documentElement.setAttribute("data-theme", theme);
+        })();
+    </script>
 
 </head>
 
@@ -51,8 +57,12 @@
                                         class="fab fa-google"></i></a></li>
                             <li class="list-inline-item"><a href="https://github.com/honglizhou" target="_blank"><i
                                         class="fab fa-github"></i></a></li>
-                            <li class="list-inline-item"><a href="mailto:hongli.joe@stu.hit.edu.cn" target="_blank"><i
-                                        class="fas fa-envelope-square"></i></a></li>
+                            <li class="list-inline-item"><a href="https://orcid.org/0009-0006-0736-1652"
+                                    target="_blank"><i class="fab fa-orcid"></i></a>
+                            </li>
+                            <li class="list-inline-item"><a href="https://www.researchgate.net/profile/Hongli-Zhou-6"
+                                    target="_blank"><i class="fab fa-researchgate"></i></a>
+                            </li>
                             <li class="list-inline-item last-item"><a href="https://www.zhihu.com/people/Joe-Hall-Lee"
                                     target="_blank"><i class="fab fa-zhihu"></i></a></li>
                         </ul>
@@ -172,7 +182,7 @@
                                 </li>
                                 <li><i class="fab fa-github"></i><span class="sr-only">GitHub:</span><a
                                         href="https://github.com/Joe-Hall-Lee">GitHub</a></li>
-                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span> Beijing,
+                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span> Harbin,
                                     China</li>
                             </ul>
                         </div><!--//content-->
@@ -200,7 +210,7 @@
                             <div class="item">
                                 <h3 class="title"><i class="fas fa-institution"></i> China Electronics Standardization
                                     Institute</h3>
-                                <h4 class="location">Beijing, China<span class="year"> (11.2024 - Present)</span></h4>
+                                <h4 class="location">Beijing, China<span class="year"> (11.2024 - 04.2025)</span></h4>
                             </div>
                         </div>
                     </div>
@@ -247,7 +257,7 @@
     <script type="text/javascript" src="assets/plugins/popper.min.js"></script>
     <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/plugins/vanilla-rss/dist/rss.global.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/dark-mode-switch/dark-mode-switch.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/dark-mode-switch/dark-mode-switch.js"></script>
     <!-- custom js -->
     <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
