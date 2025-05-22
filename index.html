@@ -1,266 +1,522 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <title>Hongli Zhou (周宏理) - Homepage</title>
+        <!-- Meta -->
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Personal homepage of Hongli Zhou, a senior undergraduate student at Harbin Institute of Technology."
+        />
+        <meta name="author" content="Hongli Zhou" />
+        <link rel="shortcut icon" href="images/favicon.ico" />
 
-<head>
-    <title>Hongli Zhou (周宏理) - Homepage</title>
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Personal homepage of Hongli Zhou, a senior undergraduate student at Harbin Institute of Technology.">
-    <meta name="author" content="Hongli Zhou">
-    <link rel="shortcut icon" href="images/favicon.ico">
+        <link
+            href="https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+            rel="stylesheet"
+            type="text/css"
+        />
 
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet'
-        type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <!-- FontAwesome JS -->
+        <script defer src="assets/fontawesome/js/all.js"></script>
 
-    <!-- FontAwesome JS -->
-    <script defer src="assets/fontawesome/js/all.js"></script>
+        <!-- Global CSS -->
+        <link
+            rel="stylesheet"
+            href="assets/plugins/bootstrap/css/bootstrap.min.css"
+        />
 
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+        <!-- Theme CSS -->
+        <link id="theme-style" rel="stylesheet" href="assets/css/styles.css" />
 
-    <!-- Theme CSS -->
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+        <!-- Inline script to set theme synchronously -->
+        <script>
+            // Run immediately to avoid flicker
+            (function () {
+                // Check localStorage for saved theme
+                const savedTheme = localStorage.getItem("theme");
+                const theme =
+                    savedTheme ||
+                    (window.matchMedia("(prefers-color-scheme: dark)").matches
+                        ? "dark"
+                        : "light");
+                // Set data-theme on <html> to apply before rendering
+                document.documentElement.setAttribute("data-theme", theme);
+            })();
+        </script>
+    </head>
 
-    <!-- Inline script to set theme synchronously -->
-    <script>
-        // Run immediately to avoid flicker
-        (function () {
-            // Check localStorage for saved theme
-            const savedTheme = localStorage.getItem("theme");
-            const theme = savedTheme || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-            // Set data-theme on <html> to apply before rendering
-            document.documentElement.setAttribute("data-theme", theme);
-        })();
-    </script>
-
-</head>
-
-<body>
-    <!-- ******HEADER****** -->
-    <header class="header">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col">
-                    <img class='profile-image img-fluid float-start rounded-circle' src="images/me.png"
-                        alt="profile image" onmouseover="this.src='images/me.png'"
-                        onmouseout="this.src='images/me.png'" />
-                    <div class="profile-content">
-                        <h1 class="name">Hongli Zhou</h1>
-                        <h2 class="desc">Undergraduate Student @ HIT</h2>
-                        <ul class="social list-inline">
-                            <li class="list-inline-item"><a
-                                    href="https://scholar.google.com/citations?user=1Ztm4XhDNvcC" target="_blank"><i
-                                        class="fab fa-google"></i></a></li>
-                            <li class="list-inline-item"><a href="https://github.com/honglizhou" target="_blank"><i
-                                        class="fab fa-github"></i></a></li>
-                            <li class="list-inline-item"><a href="https://orcid.org/0009-0006-0736-1652"
-                                    target="_blank"><i class="fab fa-orcid"></i></a>
-                            </li>
-                            <li class="list-inline-item"><a href="https://www.researchgate.net/profile/Hongli-Zhou-6"
-                                    target="_blank"><i class="fab fa-researchgate"></i></a>
-                            </li>
-                            <li class="list-inline-item last-item"><a href="https://www.zhihu.com/people/Joe-Hall-Lee"
-                                    target="_blank"><i class="fab fa-zhihu"></i></a></li>
-                        </ul>
-                    </div><!--//profile-->
-                </div><!--//col-->
-                <div class="col-12 col-md-auto">
-                    <div class="dark-mode-switch d-flex">
-                        <div class="form-check form-switch mx-auto mx-md-0">
-                            <input type="checkbox" class="form-check-input me-2" id="darkSwitch" />
-                            <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
-                        </div>
-                    </div><!--//dark-mode-switch-->
-                    <a class="btn btn-cta-primary" href="mailto:hongli.joe@stu.hit.edu.cn" target="_blank"><i
-                            class="fas fa-paper-plane"></i> Contact Me</a>
-                </div><!--//col-->
-            </div><!--//row-->
-        </div><!--//container-->
-    </header><!--//header-->
-
-    <div class="container sections-wrapper py-5">
-        <div class="row">
-            <div class="primary col-lg-8 col-12">
-                <section class="about section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">About Me</h2>
-                        <div class="content">
-                            <p align="left">
-                                I am a senior undergraduate student at <a href="http://www.hit.edu.cn/"
-                                    target="_blank">Harbin Institute
-                                    of Technology (HIT)</a>, majoring in Digital Media
-                                Technology. I am part of the <a href="https://mitlab.hit.edu.cn" target="_blank">MI&T
-                                    Lab</a> at HIT, advised by <a href="https://homepage.hit.edu.cn/yangmuyun"
-                                    target="_blank">Prof.
-                                    Muyun Yang</a>. I will become a Ph.D. student in Computer Science at HIT in Fall
-                                2025.
-                            </p>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </section><!--//section-->
-
-                <section class="about section">
-                    <div class="section-inner shadow-sm rounded">
-                        <div class="content">
-                            <p align="left">
-                                My research focuses on <font color="orange"><b>Large Language Models (LLMs)</b></font>.
-                                Key areas include:
-                            </p>
-                            <ul>
-                                <li><b>LLM Evaluation</b></li>
-                                <li><b>Reward Modeling</b></li>
+    <body>
+        <!-- ******HEADER****** -->
+        <header class="header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <img
+                            class="profile-image img-fluid float-start rounded-circle"
+                            src="images/me.png"
+                            alt="profile image"
+                            onmouseover="this.src='images/me.png'"
+                            onmouseout="this.src='images/me.png'"
+                        />
+                        <div class="profile-content">
+                            <h1 class="name">Hongli Zhou</h1>
+                            <h2 class="desc">Undergraduate Student @ HIT</h2>
+                            <ul class="social list-inline">
+                                <li class="list-inline-item">
+                                    <a
+                                        href="https://scholar.google.com/citations?user=1Ztm4XhDNvcC"
+                                        target="_blank"
+                                        ><i class="fab fa-google"></i
+                                    ></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a
+                                        href="https://github.com/honglizhou"
+                                        target="_blank"
+                                        ><i class="fab fa-github"></i
+                                    ></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a
+                                        href="https://orcid.org/0009-0006-0736-1652"
+                                        target="_blank"
+                                        ><i class="fab fa-orcid"></i
+                                    ></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a
+                                        href="https://www.researchgate.net/profile/Hongli-Zhou-6"
+                                        target="_blank"
+                                        ><i class="fab fa-researchgate"></i
+                                    ></a>
+                                </li>
+                                <li class="list-inline-item last-item">
+                                    <a
+                                        href="https://www.zhihu.com/people/Joe-Hall-Lee"
+                                        target="_blank"
+                                        ><i class="fab fa-zhihu"></i
+                                    ></a>
+                                </li>
                             </ul>
                         </div>
+                        <!--//profile-->
                     </div>
-                </section>
-
-                <section class="projects section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">News</h2>
-                        <div class="item-content">
-                            <ul class="resume-list" style="list-style: outside;list-style-type: square;">
-                                <li><b>[05/2025]</b> One paper is accepted to ACL 2025 Findings.</li>
-                                <li><b>[09/2024]</b> I'm admitted as a direct Ph.D. student in CS at HIT.</li>
-                                <li><b>[05/2024]</b> My first paper is accepted to CCL 2024.</li>
-                            </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </section><!--//section-->
-
-                <section class="latest section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Publications</h2>
-                        <div class="content">
-                            <small>(* equal contribution, <sup>#</sup> corresponding author)</small>
-                            <br>
-                            <ul class="resume-list" style="list-style: outside;list-style-type: square;">
-                                <li>
-                                    <b>An Empirical Study of LLM-as-a-Judge for LLM Evaluation: Fine-tuned Judge Model
-                                        is
-                                        not a General Substitute for GPT-4</b><br>
-                                    Hui Huang, Xingyuan Bu, <b>Hongli Zhou</b>, Yingqi Qu, Jing Liu, Muyun
-                                    Yang<sup>#</sup>, Bing Xu, Tiejun Zhao<br>
-                                    Findings of Association for Computational Linguistics (<b>ACL</b>), 2025<br>
-                                    <a href="https://arxiv.org/abs/2403.02839" target="_blank">[Paper]</a>
-                                    <a href="https://github.com/HuihuiChyan/UnlimitedJudge" target="_blank">[Code]</a>
-                                </li>
-                                <li>
-                                    <b>Mitigating the Bias of Large Language Model Evaluation</b><br>
-                                    <b>Hongli Zhou</b>, Hui Huang, Yunfei Long, Bing Xu, Conghui Zhu, Hailong Cao, Muyun
-                                    Yang<sup>#</sup>, Tiejun Zhao<br>
-                                    China National Conference on Computational Linguistics (<b>CCL</b>), 2024<br>
-                                    <a href="https://arxiv.org/abs/2409.16788" target="_blank">[Paper]</a>
-                                    <a href="https://github.com/Joe-Hall-Lee/Debias" target="_blank">[Code]</a>
-                                </li>
-                                <li>
-                                    <b>新质生产力背景下环保公益游戏设计策略探析</b><br>
-                                    张子墨, 刘柏亨<sup>#</sup>, <b>周宏理</b><br>
-                                    艺术科技, 2024<br>
-                                    <a href="https://d.wanfangdata.com.cn/periodical/ChlQZXJpb2RpY2FsQ0hJTmV3UzIwMjQwNzA0Eg15c2tqMjAyNDA5MDE5GghkZ3p6a2Q5Yw%3D%3D"
-                                        target="_blank">[Paper]</a>
-                                </li>
-                            </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </section><!--//section-->
-
-            </div><!--//primary-->
-
-            <div class="secondary col-lg-4 col-12">
-                <aside class="info aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading sr-only">Basic Information</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a
-                                        href="mailto:hongli.joe@stu.hit.edu.cn">hongli.joe@stu.hit.edu.cn</a></li>
-                                <li><i class="fab fa-google"></i><span class="sr-only">Google Scholar:</span><a
-                                        href="https://scholar.google.com/citations?user=1Ztm4XhDNvcC">Google Scholar</a>
-                                </li>
-                                <li><i class="fab fa-github"></i><span class="sr-only">GitHub:</span><a
-                                        href="https://github.com/Joe-Hall-Lee">GitHub</a></li>
-                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span> Harbin,
-                                    China</li>
-                            </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//aside-->
-
-                <aside class="education aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Education</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Harbin Institute of Technology
-                                </h3>
-                                <h4 class="university">Undergraduate Student<span class="year"> (08.2021 -
-                                        Present)</span></h4>
+                    <!--//col-->
+                    <div class="col-12 col-md-auto">
+                        <div class="dark-mode-switch d-flex">
+                            <div class="form-check form-switch mx-auto mx-md-0">
+                                <input
+                                    type="checkbox"
+                                    class="form-check-input me-2"
+                                    id="darkSwitch"
+                                />
+                                <label
+                                    class="custom-control-label"
+                                    for="darkSwitch"
+                                    >Dark Mode</label
+                                >
                             </div>
                         </div>
+                        <!--//dark-mode-switch-->
+                        <a
+                            class="btn btn-cta-primary"
+                            href="mailto:hongli.joe@stu.hit.edu.cn"
+                            target="_blank"
+                            ><i class="fas fa-paper-plane"></i> Contact Me</a
+                        >
                     </div>
-                </aside>
+                    <!--//col-->
+                </div>
+                <!--//row-->
+            </div>
+            <!--//container-->
+        </header>
+        <!--//header-->
 
-                <aside class="internships aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Internships</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title"><i class="fas fa-institution"></i> China Electronics Standardization
-                                    Institute</h3>
-                                <h4 class="location">Beijing, China<span class="year"> (11.2024 - 04.2025)</span></h4>
+        <div class="container sections-wrapper py-5">
+            <div class="row">
+                <div class="primary col-lg-8 col-12">
+                    <section class="about section">
+                        <div class="section-inner shadow-sm rounded">
+                            <h2 class="heading">About Me</h2>
+                            <div class="content">
+                                <p align="left">
+                                    I am a senior undergraduate student at
+                                    <a
+                                        href="http://www.hit.edu.cn/"
+                                        target="_blank"
+                                        >Harbin Institute of Technology (HIT)</a
+                                    >, majoring in Digital Media Technology. I
+                                    am part of the
+                                    <a
+                                        href="https://mitlab.hit.edu.cn"
+                                        target="_blank"
+                                        >MI&T Lab</a
+                                    >
+                                    at HIT, advised by
+                                    <a
+                                        href="https://homepage.hit.edu.cn/yangmuyun"
+                                        target="_blank"
+                                        >Prof. Muyun Yang</a
+                                    >. I will become a Ph.D. student in Computer
+                                    Science at HIT in Fall 2025.
+                                </p>
+                            </div>
+                            <!--//content-->
+                        </div>
+                        <!--//section-inner-->
+                    </section>
+                    <!--//section-->
+
+                    <section class="about section">
+                        <div class="section-inner shadow-sm rounded">
+                            <div class="content">
+                                <p align="left">
+                                    My research focuses on
+                                    <font color="orange"
+                                        ><b
+                                            >Large Language Models (LLMs)</b
+                                        ></font
+                                    >. Key areas include:
+                                </p>
+                                <ul>
+                                    <li><b>LLM Evaluation</b></li>
+                                    <li><b>Reward Modeling</b></li>
+                                </ul>
                             </div>
                         </div>
-                    </div>
-                </aside>
-                <aside class="internships aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Honors and Awards</h2>
-                        <div class="content">
-                            <div class="item">
-                                <div><b>
-                                        <font color="grey">[12/2023]
-                                    </b></font> Contemporary Undergraduate Mathematical Contest in Modeling, First Prize
-                                    in Heilongjiang Province</div>
-                                <div><b>
-                                        <font color="grey">[11/2022]
-                                    </b></font> Contemporary Undergraduate Mathematical Contest in Modeling, First Prize
-                                    in
-                                    Heilongjiang Province</div>
+                    </section>
+
+                    <section class="projects section">
+                        <div class="section-inner shadow-sm rounded">
+                            <h2 class="heading">News</h2>
+                            <div class="item-content">
+                                <ul
+                                    class="resume-list"
+                                    style="
+                                        list-style: outside;
+                                        list-style-type: square;
+                                    "
+                                >
+                                    <li>
+                                        <b>[05/2025]</b> One paper is accepted
+                                        to ACL 2025 Findings.
+                                    </li>
+                                    <li>
+                                        <b>[09/2024]</b> I'm admitted as a
+                                        direct Ph.D. student in CS at HIT.
+                                    </li>
+                                    <li>
+                                        <b>[05/2024]</b> My first paper is
+                                        accepted to CCL 2024.
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--//content-->
+                        </div>
+                        <!--//section-inner-->
+                    </section>
+                    <!--//section-->
+
+                    <section class="latest section">
+                        <div class="section-inner shadow-sm rounded">
+                            <h2 class="heading">Publications</h2>
+                            <div class="content">
+                                <small
+                                    >(* equal contribution,
+                                    <sup>#</sup> corresponding author)</small
+                                >
+                                <br />
+                                <ul
+                                    class="resume-list"
+                                    style="
+                                        list-style: outside;
+                                        list-style-type: square;
+                                    "
+                                >
+                                    <li>
+                                        <b
+                                            >Lost in Benchmarks? Rethinking
+                                            Large Language Model Benchmarking
+                                            with Item Response Theory</b
+                                        ><br />
+                                        <b>Hongli Zhou*</b>, Hui Huang*, Ziqing
+                                        Zhao, Lvyuan Han, Huicheng Wang, Kehai
+                                        Chen, Muyun Yang<sup>#</sup>, Wei
+                                        Bao<sup>#</sup>, Jian Dong<sup>#</sup>,
+                                        Bing Xu, Conghui Zhu, Hailong Cao,
+                                        Tiejun Zhao<br />
+                                        Preprint, 2025<br />
+                                        <a
+                                            href="https://arxiv.org/abs/2505.15055"
+                                            target="_blank"
+                                            >[Paper]</a
+                                        >
+                                        <a
+                                            href="https://github.com/Joe-Hall-Lee/PSN-IRT"
+                                            target="_blank"
+                                            >[Code]</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <b
+                                            >Think-J: Learning to Think for
+                                            Generative LLM-as-a-Judge</b
+                                        ><br />
+                                        Hui Huang*, Yancheng He*,
+                                        <b>Hongli Zhou*</b>, Rui Zhang, Wei Liu,
+                                        Weixun Wang, Wenbo Su, Bo Zheng, Jiaheng
+                                        Liu<sup>#</sup><br />
+                                        Preprint, 2025<br />
+                                        <a
+                                            href="https://arxiv.org/abs/2505.14268"
+                                            target="_blank"
+                                            >[Paper]</a
+                                        >
+                                        <a
+                                            href="https://github.com/HuihuiChyan/Think-J"
+                                            target="_blank"
+                                            >[Code]</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <b
+                                            >An Empirical Study of
+                                            LLM-as-a-Judge for LLM Evaluation:
+                                            Fine-tuned Judge Model is not a
+                                            General Substitute for GPT-4</b
+                                        ><br />
+                                        Hui Huang, Xingyuan Bu,
+                                        <b>Hongli Zhou</b>, Yingqi Qu, Jing Liu,
+                                        Muyun Yang<sup>#</sup>, Bing Xu, Tiejun
+                                        Zhao<br />
+                                        Findings of Association for
+                                        Computational Linguistics (<b>ACL</b>),
+                                        2025<br />
+                                        <a
+                                            href="https://arxiv.org/abs/2403.02839"
+                                            target="_blank"
+                                            >[Paper]</a
+                                        >
+                                        <a
+                                            href="https://github.com/HuihuiChyan/UnlimitedJudge"
+                                            target="_blank"
+                                            >[Code]</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <b
+                                            >Mitigating the Bias of Large
+                                            Language Model Evaluation</b
+                                        ><br />
+                                        <b>Hongli Zhou</b>, Hui Huang, Yunfei
+                                        Long, Bing Xu, Conghui Zhu, Hailong Cao,
+                                        Muyun Yang<sup>#</sup>, Tiejun Zhao<br />
+                                        China National Conference on
+                                        Computational Linguistics (<b>CCL</b>),
+                                        2024<br />
+                                        <a
+                                            href="https://arxiv.org/abs/2409.16788"
+                                            target="_blank"
+                                            >[Paper]</a
+                                        >
+                                        <a
+                                            href="https://github.com/Joe-Hall-Lee/Debias"
+                                            target="_blank"
+                                            >[Code]</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <b
+                                            >新质生产力背景下环保公益游戏设计策略探析</b
+                                        ><br />
+                                        张子墨, 刘柏亨<sup>#</sup>, <b>周宏理</b
+                                        ><br />
+                                        艺术科技, 2024<br />
+                                        <a
+                                            href="https://d.wanfangdata.com.cn/periodical/ChlQZXJpb2RpY2FsQ0hJTmV3UzIwMjQwNzA0Eg15c2tqMjAyNDA5MDE5GghkZ3p6a2Q5Yw%3D%3D"
+                                            target="_blank"
+                                            >[Paper]</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--//content-->
+                        </div>
+                        <!--//section-inner-->
+                    </section>
+                    <!--//section-->
+                </div>
+                <!--//primary-->
+
+                <div class="secondary col-lg-4 col-12">
+                    <aside class="info aside section">
+                        <div class="section-inner shadow-sm rounded">
+                            <h2 class="heading sr-only">Basic Information</h2>
+                            <div class="content">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <i class="fas fa-envelope"></i
+                                        ><span class="sr-only">Email:</span
+                                        ><a
+                                            href="mailto:hongli.joe@stu.hit.edu.cn"
+                                            >hongli.joe@stu.hit.edu.cn</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <i class="fab fa-google"></i
+                                        ><span class="sr-only"
+                                            >Google Scholar:</span
+                                        ><a
+                                            href="https://scholar.google.com/citations?user=1Ztm4XhDNvcC"
+                                            >Google Scholar</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <i class="fab fa-github"></i
+                                        ><span class="sr-only">GitHub:</span
+                                        ><a
+                                            href="https://github.com/Joe-Hall-Lee"
+                                            >GitHub</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-map-marker-alt"></i
+                                        ><span class="sr-only">Location:</span>
+                                        Harbin, China
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--//content-->
+                        </div>
+                        <!--//section-inner-->
+                    </aside>
+                    <!--//aside-->
+
+                    <aside class="education aside section">
+                        <div class="section-inner shadow-sm rounded">
+                            <h2 class="heading">Education</h2>
+                            <div class="content">
+                                <div class="item">
+                                    <h3 class="title">
+                                        <i class="fas fa-graduation-cap"></i>
+                                        Harbin Institute of Technology
+                                    </h3>
+                                    <h4 class="university">
+                                        Undergraduate Student<span class="year">
+                                            (08.2021 - Present)</span
+                                        >
+                                    </h4>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </aside>
-                <aside>
-                    <div id="visitor-map">
-                        <script type="text/javascript" id="clstr_globe"
-                            src="//clustrmaps.com/globe.js?d=QTrHBhOp6a-PGWmziePUNmZyixqWynq6EBZf2vyKmpo"></script>
-                    </div>
-                </aside>
+                    </aside>
 
-            </div><!--//secondary-->
-        </div><!--//row-->
-    </div><!--//masonry-->
+                    <aside class="internships aside section">
+                        <div class="section-inner shadow-sm rounded">
+                            <h2 class="heading">Internships</h2>
+                            <div class="content">
+                                <div class="item">
+                                    <h3 class="title">
+                                        <i class="fas fa-institution"></i> China
+                                        Electronics Standardization Institute
+                                    </h3>
+                                    <h4 class="location">
+                                        Beijing, China<span class="year">
+                                            (11.2024 - 04.2025)</span
+                                        >
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                    <aside class="internships aside section">
+                        <div class="section-inner shadow-sm rounded">
+                            <h2 class="heading">Honors and Awards</h2>
+                            <div class="content">
+                                <div class="item">
+                                    <div>
+                                        <b>
+                                            <font color="grey"
+                                                >[12/2023]
+                                            </font></b
+                                        >
+                                        Contemporary Undergraduate Mathematical
+                                        Contest in Modeling, First Prize in
+                                        Heilongjiang Province
+                                    </div>
+                                    <div>
+                                        <b>
+                                            <font color="grey"
+                                                >[11/2022]
+                                            </font></b
+                                        >
+                                        Contemporary Undergraduate Mathematical
+                                        Contest in Modeling, First Prize in
+                                        Heilongjiang Province
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                    <aside>
+                        <div id="visitor-map">
+                            <script
+                                type="text/javascript"
+                                id="clstr_globe"
+                                src="//clustrmaps.com/globe.js?d=QTrHBhOp6a-PGWmziePUNmZyixqWynq6EBZf2vyKmpo"
+                            ></script>
+                        </div>
+                    </aside>
+                </div>
+                <!--//secondary-->
+            </div>
+            <!--//row-->
+        </div>
+        <!--//masonry-->
 
-    <!-- ******FOOTER****** -->
-    <footer class="footer">
-        <div class="container text-center">
-            <small class="copyright">This template is modified from <a
-                    href="https://themes.3rdwavemedia.com/demo/bs5/developer/" target="_blank">Xiaoying Riley's
-                    project</a></small>
-        </div><!--//container-->
-    </footer><!--//footer-->
+        <!-- ******FOOTER****** -->
+        <footer class="footer">
+            <div class="container text-center">
+                <small class="copyright"
+                    >This template is modified from
+                    <a
+                        href="https://themes.3rdwavemedia.com/demo/bs5/developer/"
+                        target="_blank"
+                        >Xiaoying Riley's project</a
+                    ></small
+                >
+            </div>
+            <!--//container-->
+        </footer>
+        <!--//footer-->
 
-    <!-- Javascript -->
-    <script type="text/javascript" src="assets/plugins/popper.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/vanilla-rss/dist/rss.global.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/dark-mode-switch/dark-mode-switch.js"></script>
-    <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>
-</body>
-
+        <!-- Javascript -->
+        <script
+            type="text/javascript"
+            src="assets/plugins/popper.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="assets/plugins/bootstrap/js/bootstrap.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="assets/plugins/vanilla-rss/dist/rss.global.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="assets/plugins/dark-mode-switch/dark-mode-switch.js"
+        ></script>
+        <!-- custom js -->
+        <script type="text/javascript" src="assets/js/main.js"></script>
+    </body>
 </html>
