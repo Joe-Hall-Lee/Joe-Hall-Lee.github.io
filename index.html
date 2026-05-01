@@ -41,7 +41,7 @@
             // Run immediately to avoid flicker
             (function () {
                 // Check localStorage for saved theme
-                const savedTheme = localStorage.getItem("theme");
+                const savedTheme = localStorage.getItem("darkSwitch");
                 const theme =
                     savedTheme ||
                     (window.matchMedia("(prefers-color-scheme: dark)").matches
@@ -134,10 +134,24 @@
         </header>
         <!--//header-->
 
+        <nav class="section-nav" aria-label="Section navigation">
+            <div class="container">
+                <a href="#about">About</a>
+                <a href="#research">Research</a>
+                <a href="#news">News</a>
+                <a href="#publications">Publications</a>
+                <a href="#honors">Honors</a>
+                <a href="#services">Services</a>
+                <a href="#education">Education</a>
+                <a href="#internships">Internships</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+
         <div class="container sections-wrapper py-5">
             <div class="row">
                 <div class="primary col-lg-8 col-12">
-                    <section class="about section">
+                    <section class="about section" id="about">
                         <div class="section-inner shadow-sm rounded">
                             <h2 class="heading">About Me</h2>
                             <div class="content">
@@ -167,7 +181,7 @@
                     </section>
                     <!--//section-->
 
-                    <section class="about section">
+                    <section class="about section" id="research">
                         <div class="section-inner shadow-sm rounded">
                             <div class="content">
                                 <p align="left">
@@ -180,18 +194,31 @@
                                 </p>
                                 <ul>
                                     <li>
-                                        <b>LLM Evaluation</b>
+                                        <font color="orange"
+                                            ><b>LLM Evaluation</b></font
+                                        >
                                         <ul>
-                                            <li>LLM-as-a-Judge</li>
-                                            <li>LLM Benchmarking</li>
+                                            <li>
+                                                <b>LLM-as-a-Judge</b>: Think-J
+                                                (AAAI 2026), AdaptEval,
+                                                JudgeBiasBench
+                                            </li>
+                                            <li>
+                                                <b>LLM Benchmarking</b>: PSN-IRT
+                                                (AAAI 2026)
+                                            </li>
                                         </ul>
                                     </li>
-                                    <li><b>Reward Modeling</b></li>
+                                    <li>
+                                        <font color="orange"
+                                            ><b>Reward Modeling</b></font
+                                        >: RM-Distiller (IJCAI 2026)
+                                    </li>
                                 </ul>
                             </div>
                         </div>
                     </section>
-                    <section class="projects section">
+                    <section class="projects section" id="news">
                         <div class="section-inner shadow-sm rounded">
                             <h2 class="heading">News</h2>
                             <div class="item-content">
@@ -202,6 +229,10 @@
                                         list-style-type: square;
                                     "
                                 >
+                                    <li>
+                                        <b>[05/2026]</b> One paper is accepted
+                                        to IJCAI 2026.
+                                    </li>
                                     <li>
                                         <b>[11/2025]</b> Two papers are accepted
                                         to AAAI 2026.
@@ -236,7 +267,7 @@
 
                     <!--//section-->
 
-                    <section class="latest section">
+                    <section class="latest section" id="publications">
                         <div class="section-inner shadow-sm rounded">
                             <h2 class="heading">Publications</h2>
                             <div class="content">
@@ -283,7 +314,7 @@
                                         Lvyuan Han, Fuhai Song, Muyun Yang✉,
                                         Wenhao Jiang, Hailong Cao, Tiejun
                                         Zhao<br />
-                                        Preprint, 2026<br />
+                                        International Joint Conference on Artificial Intelligence (<b>IJCAI</b>), 2026<br />
                                         <a
                                             href="https://arxiv.org/abs/2601.14032"
                                             target="_blank"
@@ -429,7 +460,7 @@
                         </div>
                         <!--//section-inner-->
                     </section>
-                    <section class="projects section">
+                    <section class="projects section" id="honors">
                         <div class="section-inner shadow-sm rounded">
                             <h2 class="heading">Honors and Awards</h2>
                             <div class="item-content">
@@ -461,11 +492,31 @@
                         </div>
                         <!--//section-inner-->
                     </section>
+                    <section class="projects section" id="services">
+                        <div class="section-inner shadow-sm rounded">
+                            <h2 class="heading">Academic Services</h2>
+                            <div class="item-content">
+                                <ul
+                                    class="resume-list"
+                                    style="
+                                        list-style: outside;
+                                        list-style-type: square;
+                                    "
+                                >
+                                    <li>
+                                        <b>Reviewer</b>: IJCAI-ECAI 2026
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--//content-->
+                        </div>
+                        <!--//section-inner-->
+                    </section>
                 </div>
                 <!--//primary-->
 
                 <div class="secondary col-lg-4 col-12">
-                    <aside class="info aside section">
+                    <aside class="info aside section" id="contact">
                         <div class="section-inner shadow-sm rounded">
                             <h2 class="heading sr-only">Basic Information</h2>
                             <div class="content">
@@ -507,7 +558,7 @@
                     </aside>
                     <!--//aside-->
 
-                    <aside class="education aside section">
+                    <aside class="education aside section" id="education">
                         <div class="section-inner shadow-sm rounded">
                             <h2 class="heading">Education</h2>
                             <div class="content">
@@ -519,7 +570,7 @@
                                     <h4 class="university">
                                         Ph.D. Student in Computer Science
                                         <span class="year"
-                                            >(09.2025 - Present)</span
+                                            >(Sep 2025 – Present)</span
                                         >
                                     </h4>
                                 </div>
@@ -533,7 +584,7 @@
                                     <h4 class="university">
                                         B.Eng. in Digital Media Technology
                                         <span class="year"
-                                            >(08.2021 - 06.2025)</span
+                                            >(Aug 2021 – Jun 2025)</span
                                         >
                                     </h4>
                                 </div>
@@ -541,18 +592,18 @@
                         </div>
                     </aside>
 
-                    <aside class="internships aside section">
+                    <aside class="internships aside section" id="internships">
                         <div class="section-inner shadow-sm rounded">
                             <h2 class="heading">Internships</h2>
                             <div class="content">
                                 <div class="item">
                                     <h3 class="title">
                                         <i class="fas fa-institution"></i>
-                                        ModelBest Inc.
+                                        Foundation Model Center, ModelBest Inc.
                                     </h3>
                                     <h4 class="location">
                                         Beijing, China<span class="year">
-                                            (03.2026 - Present)</span
+                                            (Mar 2026 – Present)</span
                                         >
                                     </h4>
                                 </div>
@@ -563,7 +614,7 @@
                                     </h3>
                                     <h4 class="location">
                                         Beijing, China<span class="year">
-                                            (11.2024 - 04.2025)</span
+                                            (Nov 2024 – Apr 2025)</span
                                         >
                                     </h4>
                                 </div>
@@ -586,22 +637,6 @@
             <!--//row-->
         </div>
         <!--//masonry-->
-
-        <!-- ******FOOTER****** -->
-        <footer class="footer">
-            <div class="container text-center">
-                <small class="copyright"
-                    >This template is modified from
-                    <a
-                        href="https://themes.3rdwavemedia.com/demo/bs5/developer/"
-                        target="_blank"
-                        >Xiaoying Riley's project</a
-                    ></small
-                >
-            </div>
-            <!--//container-->
-        </footer>
-        <!--//footer-->
 
         <!-- Javascript -->
         <script

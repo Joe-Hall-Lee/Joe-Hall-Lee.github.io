@@ -15,30 +15,22 @@ var darkSwitch = document.getElementById("darkSwitch");
         theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
     }
     document.documentElement.setAttribute("data-theme", theme);
+    if (document.body) {
+        document.body.setAttribute("data-theme", theme);
+    }
 })();
 
-window.addEventListener("load", function () {
-    if (darkSwitch) {
-        initTheme();
-        darkSwitch.addEventListener("change", function () {
-            resetTheme();
-        });
-    }
-});
-
-
-var darkSwitch = document.getElementById("darkSwitch");
 window.addEventListener("DOMContentLoaded", function () {
+    darkSwitch = document.getElementById("darkSwitch");
     if (darkSwitch) {
         initTheme();
-        darkSwitch.addEventListener("change", function () {
-            resetTheme();
-        });
+        darkSwitch.addEventListener("change", resetTheme);
         // 监听系统主题变化
         window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", function (e) {
             if (!localStorage.getItem("darkSwitch")) {
                 const theme = e.matches ? "dark" : "light";
                 document.documentElement.setAttribute("data-theme", theme);
+                document.body.setAttribute("data-theme", theme);
                 darkSwitch.checked = theme === "dark";
             }
         });
@@ -56,13 +48,17 @@ window.addEventListener("DOMContentLoaded", function () {
  * @return {void}
  */
 function initTheme() {
-    var darkThemeSelected =
-        localStorage.getItem("darkSwitch") !== null &&
-        localStorage.getItem("darkSwitch") === "dark";
-    darkSwitch.checked = darkThemeSelected;
-    darkThemeSelected
-        ? document.body.setAttribute("data-theme", "dark")
-        : document.body.removeAttribute("data-theme");
+    const savedTheme = localStorage.getItem("darkSwitch");
+    const theme =
+        savedTheme === "dark" || savedTheme === "light"
+            ? savedTheme
+            : window.matchMedia("(prefers-color-scheme: dark)").matches
+              ? "dark"
+              : "light";
+
+    darkSwitch.checked = theme === "dark";
+    document.documentElement.setAttribute("data-theme", theme);
+    document.body.setAttribute("data-theme", theme);
 }
 
 /**
@@ -73,10 +69,13 @@ function initTheme() {
  */
 function resetTheme() {
     if (darkSwitch.checked) {
+        document.documentElement.setAttribute("data-theme", "dark");
         document.body.setAttribute("data-theme", "dark");
         localStorage.setItem("darkSwitch", "dark");
     } else {
-        document.body.removeAttribute("data-theme");
-        localStorage.removeItem("darkSwitch");
+        document.documentElement.setAttribute("data-theme", "light");
+        document.body.setAttribute("data-theme", "light");
+        localStorage.setItem("darkSwitch", "light");
     }
+    darkSwitch.blur();
 }
