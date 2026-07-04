@@ -265,6 +265,11 @@ a.dotted-link:hover {
 }
 
 /* About Section */
+.research-keyword {
+    color: orange;
+    font-weight: 700;
+}
+
 /* Latest Section */
 .latest .item {
     margin-bottom: 20px;
@@ -631,6 +636,12 @@ a.dotted-link:hover {
 
 .info li:last-child {
     margin-bottom: 0;
+}
+
+/* MapMyVisitors map (outside the card, centered) */
+#visitor-map {
+    display: flex;
+    justify-content: center;
 }
 
 /* Skills Section */
@@ -1100,9 +1111,4 @@ body[data-theme="dark"] .text-muted {
     top: 8px;
     left: 5px;
     font-size: 13px;
-}
-
-#visitor-map {
-    width: 50%;
-    margin: 0 auto;
 }

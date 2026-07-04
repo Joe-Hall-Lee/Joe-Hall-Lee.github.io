@@ -11,6 +11,8 @@
             content="Personal homepage of Hongli Zhou, a Ph.D. student at Harbin Institute of Technology."
         />
         <meta name="author" content="Hongli Zhou" />
+        <!-- Ensure visitor counters receive the full referrer -->
+        <meta name="referrer" content="no-referrer-when-downgrade" />
         <link rel="shortcut icon" href="images/favicon.ico" />
 
         <link
@@ -63,8 +65,6 @@
                             class="profile-image img-fluid float-start rounded-circle"
                             src="images/me.png"
                             alt="profile image"
-                            onmouseover="this.src = 'images/me.png'"
-                            onmouseout="this.src = 'images/me.png'"
                         />
                         <div class="profile-content">
                             <h1 class="name">Hongli Zhou</h1>
@@ -155,7 +155,7 @@
                         <div class="section-inner shadow-sm rounded">
                             <h2 class="heading">About Me</h2>
                             <div class="content">
-                                <p align="left">
+                                <p>
                                     I am currently a Ph.D. student in Computer
                                     Science at
                                     <a
@@ -184,18 +184,16 @@
                     <section class="about section" id="research">
                         <div class="section-inner shadow-sm rounded">
                             <div class="content">
-                                <p align="left">
+                                <p>
                                     My research focuses on
-                                    <font color="orange"
-                                        ><b
-                                            >Large Language Models (LLMs)</b
-                                        ></font
+                                    <span class="research-keyword"
+                                        >Large Language Models (LLMs)</span
                                     >. Key areas include:
                                 </p>
                                 <ul>
                                     <li>
-                                        <font color="orange"
-                                            ><b>LLM Evaluation</b></font
+                                        <span class="research-keyword"
+                                            >LLM Evaluation</span
                                         >
                                         <ul>
                                             <li>
@@ -210,8 +208,8 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <font color="orange"
-                                            ><b>Reward Modeling</b></font
+                                        <span class="research-keyword"
+                                            >Reward Modeling</span
                                         >: RM-Distiller (IJCAI 2026)
                                     </li>
                                 </ul>
@@ -504,7 +502,7 @@
                                     "
                                 >
                                     <li>
-                                        <b>Reviewer</b>: IJCAI-ECAI 2026
+                                        <b>Reviewer</b>: IJCAI-ECAI 2026, ACL ARR 2026
                                     </li>
                                 </ul>
                             </div>
@@ -522,14 +520,14 @@
                             <div class="content">
                                 <ul class="list-unstyled">
                                     <li>
-                                        <i class="fas fa-envelope"></i
+                                        <i class="fas fa-envelope fa-fw"></i
                                         ><span class="sr-only">Email:</span
                                         ><a href="mailto:hongli.joe@gmail.com"
                                             >hongli.joe@gmail.com</a
                                         >
                                     </li>
                                     <li>
-                                        <i class="fab fa-google"></i
+                                        <i class="fab fa-google fa-fw"></i
                                         ><span class="sr-only"
                                             >Google Scholar:</span
                                         ><a
@@ -538,7 +536,7 @@
                                         >
                                     </li>
                                     <li>
-                                        <i class="fab fa-github"></i
+                                        <i class="fab fa-github fa-fw"></i
                                         ><span class="sr-only">GitHub:</span
                                         ><a
                                             href="https://github.com/Joe-Hall-Lee"
@@ -546,9 +544,11 @@
                                         >
                                     </li>
                                     <li>
-                                        <i class="fas fa-map-marker-alt"></i
-                                        ><span class="sr-only">Location:</span>
-                                        Harbin, China
+                                        <i
+                                            class="fas fa-map-marker-alt fa-fw"
+                                        ></i
+                                        ><span class="sr-only">Location:</span
+                                        >Harbin, China
                                     </li>
                                 </ul>
                             </div>
@@ -622,15 +622,85 @@
                         </div>
                     </aside>
 
-                    <aside>
+                    <aside class="info aside section" id="visitors">
+                        <div class="section-inner shadow-sm rounded">
+                            <h2 class="heading">Visitors</h2>
+                            <div class="content">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <span
+                                            id="busuanzi_container_site_pv"
+                                            style="display: none"
+                                            ><i class="fas fa-eye fa-fw"></i
+                                            >Total Views:
+                                            <span
+                                                id="busuanzi_value_site_pv"
+                                            ></span
+                                        ></span>
+                                    </li>
+                                    <li>
+                                        <span
+                                            id="busuanzi_container_site_uv"
+                                            style="display: none"
+                                            ><i class="fas fa-user fa-fw"></i
+                                            >Total Visitors:
+                                            <span
+                                                id="busuanzi_value_site_uv"
+                                            ></span
+                                        ></span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--//content-->
+                        </div>
+                        <!--//section-inner-->
+                    </aside>
+
+                    <aside
+                        class="section"
+                        id="visitor-map-section"
+                        style="display: none"
+                    >
                         <div id="visitor-map">
                             <script
                                 type="text/javascript"
-                                id="clstr_globe"
-                                src="//clustrmaps.com/globe.js?d=QTrHBhOp6a-PGWmziePUNmZyixqWynq6EBZf2vyKmpo"
+                                id="mapmyvisitors"
+                                src="//mapmyvisitors.com/map.js?d=tlfhDDSqX98YmR2Kji4l4uB4dO724GWBmjAMFf56Qaw&cl=ffffff&w=a&t=tt"
                             ></script>
                         </div>
                     </aside>
+                    <script>
+                        // Reveal the visitor map only once the widget has
+                        // actually received data: on success map.js removes
+                        // its "Loading data..." placeholder, so visitors who
+                        // cannot reach mapmyvisitors.com never see a stuck
+                        // loading box.
+                        (function () {
+                            var attempts = 0;
+                            var timer = setInterval(function () {
+                                var section = document.getElementById(
+                                    "visitor-map-section",
+                                );
+                                var map =
+                                    section &&
+                                    section.querySelector(
+                                        ".mapmyvisitors-map",
+                                    );
+                                var loading =
+                                    section &&
+                                    section.querySelector(
+                                        ".mapmyvisitors-loading",
+                                    );
+                                if (map && !loading) {
+                                    section.style.display = "";
+                                    clearInterval(timer);
+                                } else if (++attempts >= 60) {
+                                    // Give up after 30s and leave it hidden
+                                    clearInterval(timer);
+                                }
+                            }, 500);
+                        })();
+                    </script>
                 </div>
                 <!--//secondary-->
             </div>
@@ -657,5 +727,10 @@
         ></script>
         <!-- custom js -->
         <script type="text/javascript" src="assets/js/main.js"></script>
+        <!-- Busuanzi visitor statistics -->
+        <script
+            async
+            src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
+        ></script>
     </body>
 </html>
